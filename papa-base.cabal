@@ -39,6 +39,13 @@ library
 
   exposed-modules:
                     Papa.Base
+                    Papa.Control.Applicative
+                    Papa.Control.Category
+                    Papa.Data.Foldable
+                    Papa.Data.Functor
+                    Papa.Data.List
+                    Papa.Data.Monoid
+                    Papa.Data.Traversable
                     
 test-suite doctests
   type:
