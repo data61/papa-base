@@ -7,7 +7,6 @@ module Papa.Data.List(
 
 import Data.Eq(Eq((==)))
 import Data.Maybe(Maybe(Nothing, Just))
-import Control.Applicative((<|>))
 import Data.Foldable(Foldable(foldr))
 import qualified Data.List as List(reverse)
 
@@ -27,4 +26,5 @@ lookup ::
   -> f (a, b)
   -> Maybe b
 lookup a =
-  foldr (\(x, y) b -> b <|> if x == a then Just y else Nothing) Nothing
+  foldr (\(x, y) b -> if x == a then Just y else b) Nothing
+
