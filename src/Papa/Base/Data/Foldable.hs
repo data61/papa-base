@@ -1,12 +1,13 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Papa.Data.Foldable(
+module Papa.Base.Data.Foldable(
   mapM_
 , sequence_
+, Foldable
 ) where
 
 import Control.Applicative(Applicative)
-import Data.Foldable(Foldable, traverse_, sequenceA_)
+import Data.Foldable(Foldable(fold, foldMap, foldr, foldr', foldl, foldl', toList, null, elem, sum, product), traverse_, sequenceA_)
 
 mapM_ ::
   (Foldable t, Applicative f) =>

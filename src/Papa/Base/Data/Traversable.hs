@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Papa.Data.Traversable(
+module Papa.Base.Data.Traversable(
   mapM
 , sequence
 ) where

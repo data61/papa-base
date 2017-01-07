@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Papa.Data.List(
+module Papa.Base.Data.List(
   reverse
 , lookup
 ) where
@@ -27,4 +27,3 @@ lookup ::
   -> Maybe b
 lookup a =
   foldr (\(x, y) b -> if x == a then Just y else b) Nothing
-

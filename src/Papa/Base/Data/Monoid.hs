@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Papa.Data.Monoid(
+module Papa.Base.Data.Monoid(
   mconcat  
 ) where
 

@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Papa.Control.Applicative(
+module Papa.Base.Control.Applicative(
   const
 , return
 ) where

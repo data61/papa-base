@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Papa.Control.Category(
+module Papa.Base.Control.Category(
   id
 ) where
 
