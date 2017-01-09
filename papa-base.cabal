@@ -1,5 +1,5 @@
 name:               papa-base
-version:            0.1.0
+version:            0.2.0
 license:            BSD3
 license-file:       LICENSE
 author:             Tony Morris <ʇǝu˙sıɹɹoɯʇ@ןןǝʞsɐɥ>
@@ -27,6 +27,8 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
+                    , papa-base-export >= 0.2.0
+                    , papa-base-implement >= 0.2.0
                     
   ghc-options:
                     -Wall
@@ -39,13 +41,6 @@ library
 
   exposed-modules:
                     Papa.Base
-                    Papa.Base.Control.Applicative
-                    Papa.Base.Control.Category
-                    Papa.Base.Data.Foldable
-                    Papa.Base.Data.Functor
-                    Papa.Base.Data.List
-                    Papa.Base.Data.Monoid
-                    Papa.Base.Data.Traversable
                     
 test-suite doctests
   type:
